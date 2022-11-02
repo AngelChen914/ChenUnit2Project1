@@ -33,7 +33,7 @@ public class LinearEquation {
 
     // Calculates and returns the slope of the line
     public double slope(){
-        return roundedToHundredth((y2 - y1)/(x2 - x1));
+        return roundedToHundredth((double)(y2 - y1)/(x2 - x1));
     }
 
 
@@ -60,7 +60,7 @@ public class LinearEquation {
                 // Used negativeY and X because it was easier for me to read
                 int negativeY = y * -1;
                 int negativeX = x * -1;
-                one = "y = " + negativeX + "/" + negativeY + "x + " + yIntercept();
+                one = "y = " + negativeY + "/" + negativeX + "x + " + yIntercept();
             }else if(y < 0 && x < 0 && y%x == 0){
                 int reduced1 = y/x;
                 one = "y = " + reduced1 + "x + " + yIntercept();
@@ -95,7 +95,7 @@ public class LinearEquation {
             }else if(y < 0 && x < 0 && y%x != 0){
                 int negativeY = y * -1;
                 int negativeX = x * -1;
-                one = "y = " + negativeX + "/" + negativeY + "x - " + yIntercept;
+                one = "y = " + negativeY + "/" + negativeX + "x - " + yIntercept;
             }else if(y < 0 && x < 0 && y%x == 0){
                 int reduced1 = y/x;
                 one = "y = " + reduced1 + "x - " + yIntercept;
@@ -126,7 +126,7 @@ public class LinearEquation {
             }else if(y < 0 && x < 0 && y%x != 0){
                 int negativeY = y * -1;
                 int negativeX = x * -1;
-                one = "y = " + negativeX + "/" + negativeY + "x + " + yIntercept();
+                one = "y = " + negativeY + "/" + negativeX + "x + " + yIntercept();
             }else if(y < 0 && x < 0 && y%x == 0){
                 int reduced1 = y/x;
                 one = "y = " + reduced1 + "x";

@@ -21,7 +21,9 @@ public class Main {
             }
             LinearEquation linear = new LinearEquation(x1, y1, x2, y2);
             System.out.println(linear.lineInfo());
-
+            System.out.println("Enter a value for x: ");
+            double xVal = scan.nextDouble();
+            System.out.println(linear.coordinateForX(xVal));
         }
     }
 
